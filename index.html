@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,9 +10,9 @@
   </head>
 
   <body onscroll="onScroll()" /*class="menu-expanded"*/>
-    <nav id="navigation" class="">
+    <nav id="navigation" class="#">
       <div class="wrapper">
-        <a class="logo" href="#"
+        <a class="logo" href="#home"
           ><svg
             width="133"
             height="18"
@@ -64,10 +65,10 @@
 
         <div class="menu">
           <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Servicos</a></li>
-            <li><a href="#">Sobre</a></li>
-          </ul>
+            <li><a onclick="closeMenu()" href="#home">Inicio</a></li>
+            <li><a onclick="closeMenu()" href="#services">Servicos</a></li>
+            <li><a onclick="closeMenu()" href="#about">Sobre</a></li>
+          </ul> 
 
           <a class="button" href="#">Agende sua consulta</a>
 
@@ -143,7 +144,7 @@
       </div>
     </nav>
 
-    <header class="wrapper">
+    <header id="home" class="wrapper">
       <h4>BOAS-VINDAS A DOCTORCARE</h4>
       <h1>Assistencia medica simplificada para todos</h1>
       <p>
@@ -166,7 +167,7 @@
         Agende sua consulta
       </button>
 
-      <img src="/assets/Foto.png" />
+      <img src="assets/Foto.png" />
 
       <div class="stats">
         <div class="stat">
@@ -187,13 +188,43 @@
     </header>
 
       <section id="services">
-   
-         <div class="wrapper">
+         <div class="wrapperr">
+            <header>
+              <h4>Servicos</h4>
+              <h2>Como podemos ajudalo a se sentir melhor</h2>
+            </header>
+
+            <div class="cards">
+              
+              <div class="card">
+                 <img src="assets/iconePositivo.svg">
+                <h3>Problemas digestivos</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quia consectetur neque. Id itaque, debitis impedit consequuntur excepturi, culpa unde ad, nobis sed magnam asperiores aspernatur reiciendis nihil distinctio neque?</p>
+              </div>
+            
+
+            
+              <div class="card">
+                 <img src="assets/iconePositivo.svg">
+                <h3>Problemas digestivos</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quia consectetur neque. Id itaque, debitis impedit consequuntur excepturi, culpa unde ad, nobis sed magnam asperiores aspernatur reiciendis nihil distinctio neque?</p>
+              </div>
+            
+
+
            
+              <div class="card">
+                 <img src="assets/iconePositivo.svg">
+                <h3>Problemas digestivos</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quia consectetur neque. Id itaque, debitis impedit consequuntur excepturi, culpa unde ad, nobis sed magnam asperiores aspernatur reiciendis nihil distinctio neque?</p>
+              </div>
+
+            </div>
+
+
          </div> 
-
       </section>
-
+     
     <script src="main.js"></script>
   </body>
 </html>
