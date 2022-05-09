@@ -337,5 +337,24 @@ nav button{
   margin-block:1.6rem;
 }
 
+a{
+  display: block;
+}
 
+#contact{
+  text-align: left;
+}
 
+#contact header{
+  margin-bottom:3.2rem;
+}
+
+footer{
+  background-color: var(--primary-color);
+  padding-block:6rem;
+}
+
+footer .logo svg{
+      width: 23.6rem;
+      height: 3.1rem;
+}
