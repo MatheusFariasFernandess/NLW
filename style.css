@@ -23,7 +23,8 @@ html{
 
 :root{
     font-size:62.5%;
-    --primary-color:hsl(170, 100%, 26%);
+    /* --primary-color:hsl(170, 100%, 26%); */
+    --primary-color:#9932CC;
     --headline:hsl(210, 11%,15%);
     --paragraph:hsl(210,9%,31%);
     --braind-beige:hsl(39,100%,97%);
@@ -47,12 +48,15 @@ body{
 }
 
 .wrapper{
-  width: 37.5rem;
+  /* width: 37.5rem; */
+  width: 30.5rem;
   margin-inline:auto;
   padding-inline:2.4rem ;
   
   
 }
+
+
 
 /* wrapperr{
    flex-direction: column;
@@ -197,8 +201,10 @@ body.menu-expanded .close-menu{
   transform:translateY(100%) ;
  } 
 
+ 
+
  body.menu-expanded .menu{
-  position: fixed;
+   position: fixed;
   top:0;
   left: 0;
   background: var(--primary-color);
@@ -357,4 +363,32 @@ footer{
 footer .logo svg{
       width: 23.6rem;
       height: 3.1rem;
+}
+
+@media (min-width:1024px){
+     /*------------------------NAVIGATION------------------------*/
+
+      /* nav .wrapper *{
+        margin:0;
+        padding: 0;
+        visibility: initial;
+        display: initial;
+        opacity: initial;
+        flex-direction: initial;
+        position: initial;
+        font-size:initial;
+        color: initial;
+        transform: initial;
+        background-color: initial;
+        font-weight: initial;
+        background-color: initial;
+        
+     }
+     */
+      
+     .wrapper{
+      width: fit-content;
+      
+    }
+     
 }
