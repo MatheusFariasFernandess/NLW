@@ -136,7 +136,8 @@ body{
 
   background-image:url("assets/vaporwave-blender.gif");
   background-position: center ;
-  background-repeat: no;
+  background-repeat: no-repeat;
+  background-size:cover;
   
 
 }
@@ -425,4 +426,20 @@ footer .logo svg{
       
     }
      
+}
+
+@media only screen and (max-width: 78.5rem) {
+      
+      .tamanhoImagem{
+        width: 90%;
+        
+        
+      }
+
+      #home .stats, .overlay  {
+        width:27rem;
+       
+      }
+
+      
 }
