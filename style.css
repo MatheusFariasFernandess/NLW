@@ -24,13 +24,14 @@ html{
 :root{
     font-size:62.5%;
     /* --primary-color:hsl(170, 100%, 26%); */
-    --primary-color:#9932CC;
-    --headline:hsl(210, 11%,15%);
-    --paragraph:hsl(210,9%,31%);
-    --braind-beige:hsl(39,100%,97%);
+    --primary-color:rgb(105, 26, 105);
+    --headline:rgb(237, 238, 235);
+    --paragraph:white;
+    --braind-beige:#FFEAC7;
     --brand-light:hsl(148,23%,89%);
     --nav-height:7.2rem;
     --bg-light:hsl(100,14%,97%);
+    --color-h4:#C84A40;
 }
 
 html,body{
@@ -44,7 +45,10 @@ body{
 
   overflow: overlay;
 
-  background-color: var(--bg-light);
+  /* background-color: var(--bg-light); */
+
+  background-color: #5e3cc4;
+
 }
 
 .wrapper{
@@ -56,7 +60,13 @@ body{
   
 }
 
-
+.imagemPrincipal{
+   width: 20rem;
+   height: 20rem;
+   margin-top:4rem; 
+   margin-inline:auto;
+   padding-left:7rem;
+}
 
 /* wrapperr{
    flex-direction: column;
@@ -69,7 +79,7 @@ body{
 
 #home h4{
   font-size:1.4rem;
-   color:var(--primary-color); 
+   color:var(--color-h4); 
 
   margin-bottom:1.6rem;
 }
@@ -112,10 +122,10 @@ body{
 }
 
 #home .stats{
-  height:32.7rem;
+  width:67rem;
   height: 47rem;
   margin-inline: auto;
-  background-color: var(--braind-beige);
+  background-color: var(--braind-beige); 
   border: 1px solid var(--brand-light);
   border-radius: 0.6rem;
 
@@ -123,9 +133,24 @@ body{
   flex-direction: column;
   justify-content: center;
   gap: 6rem;
+
+  background-image:url("assets/vaporwave-blender.gif");
+  background-position: center ;
+  background-repeat: no;
   
 
 }
+.overlay{
+ width: 67rem;
+ height: 47rem;
+  background-color: rgba(0, 0, 0, 0.473);
+  position: absolute;
+}
+
+.stat{
+  position: relative;
+}
+
 
 #home .stat p{
   margin: 0;
@@ -135,25 +160,31 @@ body{
 
 #home .stat h3{
   font-size: 4.8rem;
-  color: var(--headline);
+  color: #6E4139;
   line-height: 130%;
 
   margin-bottom: 0.4rem;
 }
 
+.tamanhoImagem{
+  width: 60rem;
+  margin-top:2rem;
+  border:0.5rem solid black;
+}
+
+
 #home img{
   width: 26.4rem;
   display: block;
-  margin-inline: auto;
   
+  margin-inline: auto;  
   object-position: 0 2rem;
 }
 
 nav{
- display: flex;
- 
+display: flex;
 height: var(--nav-height);
-
+ 
 position:fixed;
 top:0;
 left:50%;
@@ -185,6 +216,9 @@ nav.scroll button path{
 body.menu-expanded .open-menu {
  opacity:0;
  visibility: hidden;
+ 
+ ;
+  
 }
 /*--------------------------------------AQUI ACONTECE A MERDA TODA CUIDADO A O ALTERAR--------------------------------------*/
 body.menu-expanded .menu,
@@ -365,7 +399,7 @@ footer .logo svg{
       height: 3.1rem;
 }
 
-@media (min-width:1024px){
+@media (min-width:300px){
      /*------------------------NAVIGATION------------------------*/
 
       /* nav .wrapper *{
